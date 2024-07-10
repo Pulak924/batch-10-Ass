@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+s@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     font-family: "Azeret Mono", monospace;
 }
@@ -62,6 +62,14 @@ margin-top: 30px;
     width: 946px;
     height: 1235px;
     border: 2px solid red;
+    margin: 0 auto;
+}
+.coding-content{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
 .del-content{
 margin-bottom: 80px;
@@ -80,6 +88,34 @@ font-size: 16px;
 font-weight: 200;
 margin-top: 20px;
 }
+
+/* insperitation section starts here  */
+#Insperation-parent{
+
+}
+.Insperiration-content h1{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 50px;
+}
+.Insperiration-content p{
+color: rgb(13, 19, 33);
+font-family: Azeret Mono;
+font-size: 20px;
+font-weight: 400;
+text-align: center;
+margin-top: 25px;
+}
+.vedio-content{
+text-align: center;
+margin-top: 50px;
+}
+
+/* My current section starts here  */
+
 
 
 
