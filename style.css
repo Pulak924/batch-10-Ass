@@ -1,122 +1,348 @@
-s@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
-body{
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: "Azeret Mono", monospace;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
-#hero-contanier{
-width: 1340px;
-height: 640px;
-border: 2px solid red;
-background-image: url(assets/Hero-bg.png);
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
-margin-bottom: 80px;
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0px;
+  }
+.nav-section{
+    padding: 0px 0px;
 }
-.img-content img{
-display: block;
-margin-right: auto;
-margin-left: auto;
-margin-top: 20px;
+.nav-bar{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.img-content h1 {
-    color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
-    font-size: 48px;
-    font-weight: 800;
-text-align:center;
-margin-top: 20px;
+
+.nav-left h1{
+    font-size: 35px;
 }
-.img-content p{
-    color: rgb(13, 19, 33);
-font-family: Azeret Mono;
-font-size: 16px;
-font-weight: 400;
-text-align:center;
-margin-top: 25px;
+
+.nav-right button{
+    font-size: 20px;
+    padding: 15px;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 10px;
 }
-.div-btn{
-    text-align: center;
+
+.hero-section{
+    background-image: url(img/Hero-bg.png);
+    align-content: center;
+    padding: 40px 0;
 }
-.hero-btn{
-padding: 14px 18px 14px 18px;
-color: rgb(255, 255, 255);
-font-family: Azeret Mono;
-font-size: 12px;
-font-weight: 600;
-line-height: 16px;
-letter-spacing: 0%;
-text-align: center;
-color:white;
-background: rgb(13, 19, 33);
-border-radius: 8px;
-border: none;
-margin-top: 30px;
-}
-/* hero section ends here */
-#del-container{
-    width: 946px;
-    height: 1235px;
-    border: 2px solid red;
+.hero-content{
+    width: 69%;
     margin: 0 auto;
 }
-.coding-content{
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    margin-left: auto;
+.hero-content img{
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px 0;
 }
-.del-content{
-margin-bottom: 80px;
-}
-.del-content h2 {
-    color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
-    font-size: 30px;
-    font-weight: 700;
+
+.hero-content h1{
+    font-size: 50px;
     text-align: center;
-} 
-.del-content p{
-color: rgb(13, 19, 33);
-font-family: Azeret Mono;
-font-size: 16px;
-font-weight: 200;
-margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-/* insperitation section starts here  */
-#Insperation-parent{
-
+.hero-content p{
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 30px;
 }
-.Insperiration-content h1{
-    color: rgb(13, 19, 33);
-    font-family: Azeret Mono;
+.hero-content button{
+    font-size: 18px;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-left: 41%;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.about-section{
+    background-color: #FAFAFA;
+    padding: 60px 100px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.section-title h1{
     font-size: 32px;
-    font-weight: 800;
+    font-weight: bold;
     text-align: center;
-    margin-top: 50px;
-}
-.Insperiration-content p{
-color: rgb(13, 19, 33);
-font-family: Azeret Mono;
-font-size: 20px;
-font-weight: 400;
-text-align: center;
-margin-top: 25px;
-}
-.vedio-content{
-text-align: center;
-margin-top: 50px;
+    margin-bottom: 20px;
 }
 
-/* My current section starts here  */
+.section-title p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 100px;
+}
 
+.about-top{
+    background: linear-gradient(90deg, rgba(254,254,254,1) 0%, rgba(250,250,250,1) 63%);
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
 
+.about-top-left{
+    width: 50%;
+}
 
+.about-top-left h1{
+    font-size: 24px;
+    letter-spacing: 0.9;
+    padding-bottom: 10px;
+    line-height: 35px;
 
+}
+
+.about-top-left p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.about-top-left button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px;
+    background: none;
+    border: 1px solid #000;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.about-top-right img{
+    width: 90%;
+    
+}
+
+.about-middel{
+    background: linear-gradient(90deg, rgba(250,250,250,1) 0%, rgba(254,254,254,1) 51%);
+    display: flex;
+    gap: 10px;
+    padding: 40px 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.about-middel-left{
+    width: 40%;
+}
+
+.about-middel-left img{
+    width: 100%;
+}
+
+.about-middel-right h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+
+.about-middel-right button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px;
+    background: none;
+    border: 1px solid #000;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.video-section iframe{
+    border-radius: 10px;
+}
+
+.video-section{
+    padding: 30px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 40px 0 0px 0 ;
+}
+
+.Target-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.Target-card img{
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.card-section{
+    width: 33%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.color-card-1{
+    background-color: #FFF6F4;
+}
+.color-card-2{
+    background-color: #F3F6FD;
+}
+.color-card-3{
+    background-color: #FFFDF3;
+}
+
+.card-section h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-section p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card-section button{
+    font-size: 17px;
+    background: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.Next-Target-card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    border: 1px solid #000;
+    margin: 40px 0px;
+    border-radius: 15px;
+}
+
+.Next-Target-card img{
+    width: 10%;
+}
+
+.Next-Target-card h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Next-Target-card p{
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.Next-Target-card button{
+    font-size: 17px;
+    background: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.Support-section{
+    background-image: url(img/handshake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 170px;
+    border-radius: 15px;
+}
+
+.Support-title h2{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.Support-title p{
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-section input{
+    width: 80%;
+    padding: 21px;
+    border-radius: 10px;
+}
+
+.form-section ::placeholder{
+    font-size: 20px;
+}
+
+.form-section button{
+    padding: 17px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #F8F8F8;
+    margin-top: 100px;
+}
+
+.footer-contant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.footer-left h1{
+    font-size: 20px;
+}
+
+.footer-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
